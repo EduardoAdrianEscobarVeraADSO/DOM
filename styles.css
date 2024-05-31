@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --Starship: #F3DB4C;
+  --Mine-Shaft:#343434;
+  --Husk:#B2A443;
+  --Sycamore:#94843C;
+  --padding: 8px;
+  --margin: 10px;
+  --white: white;
+  --max-width:90%;
+}
+::selection{
+  background-color: var(--Starship);
+}
+body{
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--Mine-Shaft);
+  line-height: 24px;
+  font-size: 16px;
+}
+header{
+  text-align: center;
+  color: var(--Starship);
+  border-bottom: 1px solid var(--Sycamore);
+  margin-bottom: var(--margin);
+  padding: var(--padding);
+}
+h1, h2{
+  padding: var(--padding);
+  color: var(--Starship);
+}
+section{
+  padding: var(--padding);
+}
+a{
+  color: var(--Starship);
+  text-decoration: none;
+}
+p{
+  font-size: 1rem;
+  color: var(--white);
+}
+p::first-letter{
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--Starship);
+}
+
+ul{
+  list-style: none;
+}
+
+ul.list>li.item{
+  cursor: pointer;
+  color: var(--Starship);
+}
+li.item:hover a{color: var(--white);}
+.container{
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--padding);
+}
+.card{
+  width: 350px;
+  border: solid 1px var(--Sycamore);
+  margin: var(--margin) auto;
+}
+.list{
+  text-align: center;
+  padding: var(--padding);
+}
+.item{
+  border-bottom:solid 1px var(--Sycamore);
+  transition: 1s;
+  font-size: 1.2rem;
+}
+.item:hover{
+  background-color: var(--Sycamore);
+  color: var(--Mine-Shaft);
+}
+.item:last-child{
+  border: none;
+}
+
+form{
+  padding: var(--padding);
+}
+form:focus-within{
+  background-color: rgb(250, 102, 102);
+}
+input{
+  padding: var(--padding);
+}
+input[type = text], input[type=password]{
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+}
+input:hover{
+  background-color: gray;
+}
+form:hover{
+  background-color: #94843C;
+}
+label{
+  color: var(--white);
+}
+input[type = checkbox]:checked + label{
+  color: black;
+}
+
+input[type = checkbox]:checked{
+  transform: scale(1.5);
+}
